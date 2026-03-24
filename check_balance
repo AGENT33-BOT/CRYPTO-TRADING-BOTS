@@ -1,0 +1,30 @@
+import os
+from pathlib import Path
+from dotenv import load_dotenv
+from pybit.unified_trading import HTTP
+
+BASE_DIR = Path(__file__).resolve().parent
+ENV_PATH = BASE_DIR / '.env.bybit'
+
+if not ENV_PATH.exists():
+    raise SystemExit(f"Missing credentials file: {ENV_PATH}")
+
+load_dotenv(ENV_PATH)
+API_KEY = os.getenv('BYBIT_API_KEY')
+API_SECRET = os.getenv('BYBIT_API_SECRET')
+
+if not API_KEY or not API_SECRET:
+    raise SystemExit("BYBIT_API_KEY or BYBIT_API_SECRET not set in .env.bybit")
+
+session = HTTP(api_key=API_KEY, api_secret=API_SECRET, testnet=False)
+acc = session.get_wallet_balance(accountType='UNIFIED')
+
+# Find USDT coin
+coins = acc['result']['list'][0]['coin']
+for c in coins:
+    if c['coin'] == 'USDT':
+        print('USDT Balance:', c.get('walletBalance', '0'))
+        print('Available:', c.get('availableToWithdraw', '0'))
+        break
+
+print('Used Margin:', acc['result']['list'][0].get('totalInitialMargin', '0'))

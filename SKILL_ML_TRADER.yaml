@@ -1,0 +1,51 @@
+# ML Crypto Trading Skill
+
+name: ml-crypto-trader
+version: 1.0.0
+description: Machine learning trading system using Random Forest for crypto price prediction
+
+## Capabilities
+- Trains ML models on historical price data
+- Makes buy/sell predictions with confidence scores
+- Auto-executes trades based on ML signals
+- Manages risk with dynamic position sizing
+- Supports multiple trading pairs
+
+## Configuration
+```yaml
+symbols:
+  - ETH/USDT:USDT
+  - NEAR/USDT:USDT
+  - DOGE/USDT:USDT
+
+timeframe: 15m
+confidence_threshold: 0.65
+leverage: 3
+risk_per_trade: 0.02
+```
+
+## Usage
+```bash
+# Train models
+python train_lightweight.py
+
+# Run single bot
+python ml_trader_live.py --symbol ETH/USDT:USDT
+
+# Monitor all bots
+python monitor_ml_bots.py
+```
+
+## Files
+- ml_trader_live.py - Live trading bot
+- train_lightweight.py - Model training
+- monitor_ml_bots.py - Bot monitoring
+- ML_SYSTEM_DOCUMENTATION.md - Full docs
+
+## Performance
+- ETH: 90.72% training accuracy
+- NEAR: 84.28% training accuracy
+- DOGE: 91.35% training accuracy
+
+## Status
+ACTIVE - Running in production

@@ -1,0 +1,1 @@
+Get-CimInstance Win32_Process -Filter "name='python.exe'" | Where-Object { $_.CommandLine -like '*mean_reversion*' -or $_.CommandLine -like '*momentum*' -or $_.CommandLine -like '*scalping*' -or $_.CommandLine -like '*grid_trader*' -or $_.CommandLine -like '*funding_arbitrage*' } | Select-Object ProcessId, CommandLine

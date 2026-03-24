@@ -1,0 +1,56 @@
+============================================================
+BYBIT ACCOUNT STATUS
+============================================================
+
+BALANCE:
+   Total: $126.83 USDT
+   Available: $77.48 USDT
+   Used in Positions: $49.34 USDT
+
+OPEN POSITIONS:
+------------------------------------------------------------
+- DOGE/USDT:USDT
+   Side: LONG
+   Entry: $0.0946
+   Mark: $0.0934
+   Size: 188.0
+   Notional: $17.79
+   PnL: $-0.24 (-1.34%)
+
++ LINK/USDT:USDT
+   Side: SHORT
+   Entry: $8.5810
+   Mark: $8.5340
+   Size: 2.3
+   Notional: $19.74
+   PnL: $+0.11 (+0.55%)
+
++ ADA/USDT:USDT
+   Side: SHORT
+   Entry: $0.2650
+   Mark: $0.2642
+   Size: 75.0
+   Notional: $19.88
+   PnL: $+0.06 (+0.30%)
+
+- XRP/USDT:USDT
+   Side: LONG
+   Entry: $1.4488
+   Mark: $1.4179
+   Size: 34.6
+   Notional: $50.13
+   PnL: $-1.07 (-2.13%)
+
++ NEAR/USDT:USDT
+   Side: SHORT
+   Entry: $1.0121
+   Mark: $0.9973
+   Size: 33.0
+   Notional: $33.40
+   PnL: $+0.49 (+1.46%)
+
+------------------------------------------------------------
+Total Positions: 5
+Total Unrealized PnL: $-0.65
+
+============================================================

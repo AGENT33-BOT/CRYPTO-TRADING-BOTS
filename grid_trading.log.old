@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\digim\clawd\crypto_trader\grid_trader.py", line 31, in <module>
+    logging.FileHandler('grid_trading.log'),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\digim\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1231, in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+  File "C:\Users\digim\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 1263, in _open
+    return open_func(self.baseFilename, self.mode,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\digim\\clawd\\crypto_trader\\grid_trading.log'

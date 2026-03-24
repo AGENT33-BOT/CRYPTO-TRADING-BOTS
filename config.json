@@ -1,0 +1,32 @@
+{
+  "api": {
+    "key": "YOUR_BYBIT_API_KEY_HERE",
+    "secret": "YOUR_BYBIT_SECRET_HERE"
+  },
+  "trading": {
+    "min_confidence": 80,
+    "take_profit_pct": 0.015,
+    "stop_loss_pct": 0.02,
+    "partial_profit_pct": 0.01,
+    "max_positions": 5,
+    "risk_per_trade": 1.5
+  },
+  "protection": {
+    "max_loss_per_position": 5.0,
+    "max_daily_loss": 15.0,
+    "breakeven_trigger_pct": 1.0,
+    "trailing_start_pct": 1.5,
+    "trailing_distance_pct": 0.5
+  },
+  "trading_mode": "futures_only",
+  "margin": {
+    "mode": "ISOLATED",
+    "leverage": 3
+  },
+  "pairs": [
+    "ETH/USDT:USDT",
+    "NEAR/USDT:USDT",
+    "LINK/USDT:USDT",
+    "DOGE/USDT:USDT"
+  ]
+}
